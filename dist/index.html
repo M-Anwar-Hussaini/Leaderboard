@@ -4,9 +4,87 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebPack-Linters-Configurations</title>
+    <title>Leaderboard</title>
   <script defer src="index.bundle.js"></script></head>
-  <body>
-    <h1>WebPack-Linters-Configurations</h1>
+  <body class="d-flex flex-column min-vh-100 py-2">
+    <!-------------------->
+    <!-- HEADER SECTION -->
+    <!-------------------->
+    <header class="container text-bg-success py-3">
+      <h1>Leaderboard</h1>
+    </header>
+
+    <!--------------->
+    <!-- MAIN PART -->
+    <!--------------->
+    <main class="container py-3 flex-grow-1">
+      <div class="row gap-4 h-100 align-items-center">
+        <!-- Recent Score container -->
+        <div class="col p-2 recent-scores-div">
+          <!-- Header for the table -->
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <h2>Recent Scores</h2>
+            <button class="btn btn-outline-success">Refresh</button>
+          </div>
+
+          <!-- Table for storing the content -->
+          <table class="table table-striped table-bordered table-hover">
+            <thead class="table-success">
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Nasim</td>
+                <td>98</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Sharif</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Hamid</td>
+                <td>100</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Add a new member to the list -->
+        <div class="col border rounded border-success p-2 add-score-div">
+          <form class="d-flex flex-column align-items-start gap-3">
+            <h3>Add your score</h3>
+            <input
+              type="text"
+              placeholder="Your name"
+              class="form-control"
+              id="user-name"
+            />
+            <input
+              type="number"
+              placeholder="Your score"
+              class="form-control"
+              id="user-score"
+              min="0"
+              max="100"
+            />
+            <button class="btn btn-success ms-auto">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-------------------->
+    <!-- FOOTER SECTION -->
+    <!-------------------->
+    <footer class="container py-3 bg-success-subtle mt-auto">
+      <div class="lead">All rights reserved.</div>
+    </footer>
   </body>
 </html>
