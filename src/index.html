@@ -24,7 +24,7 @@
           <!-- Header for the table -->
           <div class="d-flex align-items-center justify-content-between mb-3">
             <h2>Recent Scores</h2>
-            <button class="btn btn-outline-success">Refresh</button>
+            <button id="btn--refresh" class="btn btn-outline-success">Refresh</button>
           </div>
 
           <!-- Table for storing the content -->
@@ -37,21 +37,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
-                <td>Nasim</td>
-                <td>98</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Sharif</td>
-                <td>80</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Hamid</td>
-                <td>100</td>
-              </tr>
+              <!-- The content of this part will be loaded from API -->
             </tbody>
           </table>
         </div>
@@ -60,21 +46,9 @@
         <div class="col border rounded border-success p-2 add-score-div">
           <form class="d-flex flex-column align-items-start gap-3">
             <h3>Add your score</h3>
-            <input
-              type="text"
-              placeholder="Your name"
-              class="form-control"
-              id="user-name"
-            />
-            <input
-              type="number"
-              placeholder="Your score"
-              class="form-control"
-              id="user-score"
-              min="0"
-              max="100"
-            />
-            <button class="btn btn-success ms-auto">Submit</button>
+            <input type="text" placeholder="Your name" class="form-control" id="user-name" />
+            <input type="number" placeholder="Your score" class="form-control" id="user-score" min="0" max="100" />
+            <button id="btn--submit" class="btn btn-success ms-auto">Submit</button>
           </form>
         </div>
       </div>
