@@ -3,6 +3,7 @@ class Leaderboard {
     this.apiUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/mfnFOIKVcDAV9WvHfW7D/scores';
   }
 
+  // It send a request to API and get the info saved on API
   getDataFromAPI = async () => {
     try {
       const response = await fetch(this.apiUrl);
@@ -13,6 +14,7 @@ class Leaderboard {
     }
   };
 
+  // Send the info to the API
   sendDataToAPI = async (userName, score) => {
     try {
       const data = {
