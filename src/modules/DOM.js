@@ -28,6 +28,7 @@ class DOM {
   // Receive data from API using Leaderboard class and display it on the page
   fillTable = async () => {
     const data = await this.board.getDataFromAPI();
+    data.sort((item1, item2) => item2.score - item1.score);
     this.tbody.innerHTML = '';
     data.forEach((game, index) => {
       this.tbody.insertAdjacentHTML('beforeend', this.createScoreHTML(game, index + 1));
