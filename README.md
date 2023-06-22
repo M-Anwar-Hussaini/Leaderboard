@@ -9,7 +9,8 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [� Getting Started ](#-getting-started-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Configuring WebPack](#configuring-webpack)
     - [Setup](#setup)
@@ -83,8 +84,9 @@
 
 <!-- LIVE DEMO -->
 
+## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- - [Live Demo Link](https://google.com) -->
+- ✅ [click](https://m-anwar-hussaini.github.io/Leaderboard/dist/) to see live demo.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
