@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
     <title>Leaderboard</title>
   </head>
   <body class="d-flex flex-column min-vh-100 py-2">
@@ -18,9 +19,9 @@
     <!-- MAIN PART -->
     <!--------------->
     <main class="container py-3 flex-grow-1">
-      <div class="row gap-4 h-100 align-items-center">
+      <div class="row h-100 align-items-center">
         <!-- Recent Score container -->
-        <div class="col p-2 recent-scores-div">
+        <div class="col-12 col-md-6 p-2 recent-scores-div order-1 order-md-0">
           <!-- Header for the table -->
           <div class="d-flex align-items-center justify-content-between mb-3">
             <h2>Recent Scores</h2>
@@ -43,7 +44,7 @@
         </div>
 
         <!-- Add a new member to the list -->
-        <div class="col border rounded border-success p-2 add-score-div">
+        <div class="col-12 col-md-6 border rounded border-success p-2 add-score-div order-0 order-md-1 mb-3 mb-md-0">
           <form class="d-flex flex-column align-items-start gap-3">
             <h3>Add your score</h3>
             <input type="text" placeholder="Your name" class="form-control" id="user-name" />
