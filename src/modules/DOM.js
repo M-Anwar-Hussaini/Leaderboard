@@ -45,11 +45,14 @@ class DOM {
 
     // Validate the username to have at least 3 characters
     if (userValue.length < 3) {
-      this.alert.textContent = 'Username must have at least 3 characters without leading spaces.';
+      this.showAlertMessage('Username must have at least 3 characters without leading space');
+      userName.focus();
+      return;
+    }
 
-      this.alert.classList.remove('d-none');
-      this.alert.classList.remove('alert-success');
-      this.alert.classList.add('alert-danger');
+    if (!scoreValue) {
+      this.showAlertMessage('Invalid score');
+      score.focus();
       return;
     }
 
@@ -63,6 +66,14 @@ class DOM {
 
     userName.value = '';
     score.value = '';
+  };
+
+  showAlertMessage = (msg) => {
+    this.alert.textContent = msg;
+
+    this.alert.classList.remove('d-none');
+    this.alert.classList.remove('alert-success');
+    this.alert.classList.add('alert-danger');
   };
 
   // This method is needed when the instance of DOM class is created
