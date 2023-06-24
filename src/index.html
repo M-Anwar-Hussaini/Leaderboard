@@ -27,7 +27,9 @@
             <!-- Header for the table -->
             <div class="d-flex align-items-center justify-content-between mb-3">
               <h2>Recent Scores</h2>
-              <button id="btn--refresh" class="btn btn-outline-success">Refresh</button>
+              <button id="btn--refresh" class="btn btn-outline-success">
+                Refresh
+              </button>
             </div>
 
             <!-- Table for storing the content -->
@@ -52,11 +54,33 @@
           <div class="border border-success rounded p-2">
             <form class="d-flex flex-column gap-2">
               <h3>Add your score</h3>
-              <input type="text" placeholder="Your name" class="form-control" id="user-name" maxlength="25" minlength="3" />
-              <input type="number" placeholder="Your score" class="form-control" id="user-score" min="0" max="100" />
-              <button id="btn--submit" class="btn btn-success ms-auto">Submit</button>
+              <input
+                type="text"
+                placeholder="Your name"
+                class="form-control"
+                id="user-name"
+                maxlength="25"
+                minlength="3"
+              />
+              <input
+                type="number"
+                placeholder="Your score"
+                class="form-control"
+                id="user-score"
+                min="0"
+                max="100"
+              />
+              <button id="btn--submit" class="btn btn-success ms-auto">
+                Submit
+              </button>
             </form>
-            <div id="alert-message" class="d-none text-wrap alert alert-success alert-dismissible" role="alert">The message</div>
+            <div
+              id="alert-message"
+              class="d-none text-wrap alert alert-success alert-dismissible mt-2"
+              role="alert"
+            >
+              The message
+            </div>
           </div>
         </div>
       </div>
